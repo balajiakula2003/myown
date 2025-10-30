@@ -1,0 +1,116 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.482);
+  padding-top: -10px; /* increase value until gap looks perfect */
+}
+
+
+.navbar{
+    margin-top: -5px;
+background-color: rgb(0, 0, 0);
+position: fixed;
+width: 100%;
+z-index: 1000;
+}
+.nav-link{
+color: rgb(11, 167, 32);
+margin-left: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+}
+.nav-link:hover{
+color: #eb3434;
+font-weight: 900;
+}
+.navbar-brand{
+color: rgb(255, 234, 8);
+font-size: 25px;
+font-weight: 900;
+}
+.navbar-brand:hover{
+    color: yellow;
+}
+.navbar-toggler{
+    background-color: rgb(54, 53, 53);
+    
+}
+.logo{
+    margin-right: 10px;
+}
+
+.dropdown-item:hover{
+    font-weight: 900;
+    color: #eb3434;
+}
+
+.temple-timings-section {
+  margin-top: 90px; 
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px black;
+  font-family: Arial, sans-serif;
+  
+  
+}
+.table-wrap {
+    
+
+  overflow-x: auto;
+  padding: 6px 0;
+}
+.timings-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+  
+}
+.timings-table thead th {
+  background: linear-gradient(90deg, pink,rgb(255, 151, 151));
+  color: brown;
+  text-align: left;
+  padding: 12px 14px;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(0,0,0,0.06);
+  
+}
+.timings-table tbody td {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(4, 4, 226, 0.06);
+  vertical-align: middle;
+  color: #222;
+}
+.timings-table tbody tr:nth-child(even) {
+  background: rgba(240, 240, 240, 0.35);
+}
+.timings-note {
+  margin-top: 12px;
+  font-size: 14px;
+  color: rgba(247, 26, 26, 0.728);
+  text-align: center;
+}
+.logo{
+    margin-right: 10px;
+}
+@media (max-width: 800px) {
+  .temple-timings-section {
+     padding: 12px; 
+}
+  .temple-timings-section h2 {
+     font-size: 20px;
+ }
+  .timings-table thead th, .timings-table tbody td { 
+    padding: 10px; font-size: 14px; 
+}
+ .navbar-brand{
+        margin-left:55px;
+        display: flex;
+        justify-content: center;
+      }
+
+}

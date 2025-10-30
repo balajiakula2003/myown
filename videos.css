@@ -1,0 +1,86 @@
+body{
+    overflow-x: hidden;
+    background-image: url('./vontmitta/1633934677815\ \(1\).jpg');
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.482);
+}
+.navbar{
+    margin-top: -5px;
+background-color: rgb(0, 0, 0);
+position: fixed;
+width: 100%;
+z-index: 1000;
+}
+.nav-link{
+color: rgb(11, 167, 32);
+margin-left: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+}
+.nav-link:hover{
+color: #eb3434;
+font-weight: 900;
+}
+.navbar-brand{
+color: rgb(255, 234, 8);
+font-size: 25px;
+font-weight: 900;
+}
+.navbar-brand:hover{
+    color: yellow;
+}
+.navbar-toggler{
+    background-color: rgb(54, 53, 53);
+    
+}
+.logo{
+    margin-right: 10px;
+}
+
+.dropdown-item:hover{
+    font-weight: 900;
+    color: #eb3434;
+}
+.fullscreen{
+  margin-top: 50px;
+     display: grid;
+  grid-template-columns: repeat(3, 1fr); /* oka row lo 3 videos */
+  gap: 20px;
+  padding: 10px;
+  
+}
+.video video{
+  
+     height: 300px;
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+     border-style: double;
+     border-style: groove;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+.video video:hover {
+    
+  transform: scale(1.05);     
+  box-shadow: 10px 10px 20px rgba(213, 248, 17, 0.5); 
+}
+@media (max-width: 992px) {
+  .fullscreen {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .fullscreen {
+    grid-template-columns: 1fr; /* stack vertically on small screens */
+  }
+  .navbar-brand {
+    margin-left: 20px;
+    
+  }
+ 
+}
